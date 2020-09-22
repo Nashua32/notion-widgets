@@ -2,15 +2,23 @@
 <body>
  
  <?php
+ function displayRandomMeme()
+ {
     $arr = array();
     $dir_name = "mémek";
     $images = glob($dir_name.".jpg");
     foreach($images as $image) {
         array_push($arr, $image);
     }
+    $randomNumber = array_rand($arr);
+    $randomImage = $arr[$randomNumber];
+    echo "<img src=\$randomImage\" width=\"725\" heigth=\"300\">";
+ }
+
+displayRandomMeme();
 ?>
  
-<img src="IMG_20200922_164246.jpg" alt="Meme not found:(" width="460" height="345">
+<!img src="IMG_20200922_164246.jpg" alt="Meme not found:(" width="460" height="345">
 
 </body>
 </html>
