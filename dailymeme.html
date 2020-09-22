@@ -5,15 +5,16 @@
  function displayRandomMeme()
  {
     $arr = array();
-    $dir_name = "mémek";
-    $images = glob($dir_name.".jpg");
+    $images = glob("memes/*.jpg");
     foreach($images as $image) {
         array_push($arr, $image);
     }
+    $arr = array(")
     $randomNumber = array_rand($arr);
     $randomImage = $arr[$randomNumber];
-    echo "<img src=\$randomImage\" width=\"725\" heigth=\"300\">";
+    echo '<img src="' . $randomImage . '" width="725" heigth="300">';
  }
+ 
 
 displayRandomMeme();
 ?>
