@@ -1,32 +1,12 @@
- <html>
- <head>
-    <title>Daily Meme</title>
-    <script type="text/javascript">
-    ImageArray = new Array();
-    ImageArray[0] = 'goat1.jpg';
-    ImageArray[1] = 'kitchen4.jpg';
-    ImageArray[2] = 'pig1.jpg';
-    ImageArray[3] = 'site1.jpg';
-    ImageArray[4] = 'site2.jpg';
-    ImageArray[5] = 'site3.jpg';
-    ImageArray[6] = 'site4.jpg';
-    ImageArray[7] = 'site5.jpg';
-    ImageArray[8] = 'site6.jpg';
-    ImageArray[9] = 'site7.jpg';
-    ImageArray[10] = 'site8.jpg';
-
-
-function getRandomImage() {
-    let num = Math.floor( Math.random() * 11);
-    let img = ImageArray[num];
-    document.getElementById("randImage").innerHTML = ('<img src="' + 'images/random/' + img + '" width="250px">')
-
-}
-</script>
-</head>
+<html>
 <body>
-<img src="https://cdn.shopify.com/s/files/1/1555/7781/products/Cloudy_Night_SMALL_900x.jpg?v=1538052354" alt="Blue sky" width="460" height="350">
- 
+
+<h2>Alternative text</h2>
+
+<p>The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains:</p>
+
+<img src="https://cdn.shopify.com/s/files/1/1555/7781/products/Cloudy_Night_SMALL_900x.jpg?v=1538052354" alt="Flowers in Chania" width="460" height="345">
+
 </body>
 </html>
  
